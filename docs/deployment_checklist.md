@@ -7,7 +7,10 @@
 - [ ] Slot SSD in **Argon NEO 5** case, connect fan header.
 - [ ] Boot Pi with keyboard/HDMI and run:
 
-      ```bash
+      ```
+      sudo apt-get update && sudo apt-get upgrade-all y
+      sudo apt install -y curl python3 python3-pyqt5 python3-pip
+      curl https://download.argon40.com/argonneo5.sh | bash -x
       sudo ./scripts/create_golden_image.sh
       ```
 
